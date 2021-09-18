@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
     --gray-2: #363636;
     --white : white;
     --black: black;
+    --light: #FFEBC9;
+    --brown: #753422;
+    --terracotta: #B05B3B;
+    --coffee: #D79771;
   }
   html{
     font-size: 10px;
