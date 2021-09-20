@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { MdMenu } from "react-icons/md";
+import { MdClose } from "react-icons/md";
 
 const NavigationMenuStyle = styled.div`
   position: fixed;
@@ -35,12 +37,67 @@ const NavigationMenuStyle = styled.div`
       color: var(--coffee);
     }
   }
+  .mobile-menu-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 4rem;
+    cursor: pointer;
+    display: none;
+    outline: none;
+  }
+  .closeNavIcon {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .mobile-menu-icon {
+      display: block;
+    }
+    .navItems {
+      --top: 1rem;
+      transition: 0.3 ease-in-out transform;
+      background-color: var(--light);
+      padding: 2rem;
+      width: 90%;
+      max-width: 300px;
+      border-radius: 12px;
+      position: absolute;
+      right: 1rem;
+      top: var(--top);
+      .closeNavIcon {
+        display: block;
+        width: 3rem;
+        margin: 0 0 0 auto;
+        cursor: pointer;
+        * {
+          pointer-events: none;
+        }
+      }
+      li {
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 `;
 
 export default function NavigationMenu() {
+  const [showNav, setShowNav] = useState(false);
   return (
     <NavigationMenuStyle>
-      <ul>
+      <div className="mobile-menu-icon">
+        <MdMenu />
+      </div>
+      <ul className="navItems">
+        <div
+          className="closeNavIcon"
+          onClick={() => setShowNav(!showNav)}
+          role="button"
+          onKeyDown={() => setShowNav(!showNav)}
+          tabIndex={0}
+        >
+          <MdClose />
+        </div>
         <li>
           <NavLink to="/" exact>
             Home
