@@ -56,7 +56,7 @@ const NavigationMenuStyle = styled.div`
     padding: 0;
     .hide-item {
       transform: translateY(calc(-100% - var(--top)));
-      transition: transform ease-out 0.3s;
+      transition: transform ease-in-out 0.3s;
     }
     .mobile-menu-icon {
       display: block;
