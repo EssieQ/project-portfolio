@@ -19,10 +19,10 @@ const GlobalStyles = createGlobalStyle`
     --coffee: #D79771;
   }
   html{
+    color: var(--black);
     font-size: 10px;
     font-family: 'Roboto Mono';
     background-color: var(--light);
-    color: var(--coffee);
   }
   ul,li{
     list-style: none;
