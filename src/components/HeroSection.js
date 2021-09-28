@@ -6,6 +6,10 @@ import ReactRotatingText from "react-rotating-text";
 import styled from "styled-components";
 
 const HeroStyles = styled.div`
+  .personal {
+    margin-top: 100px;
+  }
+
   .float-container {
     padding: 20px;
   }
@@ -48,6 +52,9 @@ const HeroStyles = styled.div`
   }
   .hero-info {
     margin-top: 20px;
+    p {
+      font-size: 3rem;
+    }
   }
 
   .hero-social {
@@ -80,6 +87,34 @@ const HeroStyles = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 768px) {
+    .float-child {
+      width: 100%;
+      float: center;
+      padding: 20px;
+    }
+    .hero {
+      min-height: 750px;
+    }
+    .hero-heading {
+      font-size: 1.4rem;
+      margin-bottom: -3rem;
+      .hero-name {
+        font-size: 4.5rem;
+      }
+    }
+    .hero-img {
+      height: 300px;
+    }
+    .hero-info {
+      margin-top: 3rem;
+      p {
+        margin-top: 4rem;
+        line-height: 40px;
+        font-size: 2.5rem;
+      }
+    }
+  }
 `;
 
 export default function HeroSection() {
@@ -87,7 +122,7 @@ export default function HeroSection() {
     <HeroStyles>
       <div className="hero">
         <div className="container float-container">
-          <div className="float-child">
+          <div className="float-child personal">
             <h1 className="hero-heading">
               <span>Hello, my name is</span>
               <span className="hero-name">Esther Cauven</span>
@@ -95,16 +130,18 @@ export default function HeroSection() {
 
             <div className="hero-info">
               <PText>
-                <ReactRotatingText
-                  items={[
-                    "Front-end Developer",
-                    "Polyglot",
-                    "Cozy knitter",
-                    "Avid reader",
-                  ]}
-                />
+                <p>
+                  <ReactRotatingText
+                    items={[
+                      "Front-end Developer",
+                      "Polyglot",
+                      "Cozy knitter",
+                      "Avid reader",
+                    ]}
+                  />
+                </p>
               </PText>
-              <Button btnLink="/projects" btnText="see my works" />
+              <Button btnLink="/projects" btnText="click to see my work" />
             </div>
             <div className="hero-social">
               <p>
