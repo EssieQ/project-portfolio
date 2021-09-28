@@ -9,6 +9,7 @@ const ButtonStyle = styled.div`
     background-color: ${(props) =>
       props.outline ? "var(--terracotta)" : "var(--light)"};
     padding: 0.7em 2em;
+    margin-top: 20px;
     border-radius: 12px;
     display: inline-block;
     border: 1px solid var(--terracotta);

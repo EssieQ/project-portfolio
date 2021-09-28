@@ -8,9 +8,9 @@ const GlobalStyles = createGlobalStyle`
   }
   :root{
     --dark-bg: #262626;
-    --gray-1: #BCB4B4;
+  
     --deep-dark: #1E1E1E;
-    --gray-2: #363636;
+   
     --white : white;
     --black: black;
     --light: #FFEBC9;
@@ -21,7 +21,8 @@ const GlobalStyles = createGlobalStyle`
   html{
     font-size: 10px;
     font-family: 'Roboto Mono';
-    background-color: var(--dark-bg);
+    background-color: var(--light);
+    color: var(--coffee);
   }
   ul,li{
     list-style: none;
@@ -33,6 +34,7 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
   }
   button{
     outline: none
@@ -41,6 +43,7 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+    
   }
 /* Smooth Scroll  */
   [data-scrollbar] {
