@@ -13,6 +13,22 @@ const AboutSectionStyle = styled.div`
   .section-title {
     text-align: left;
   }
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .section-title {
+      text-align: center;
+    }
+    .about-section-buttons {
+      flex-direction: column;
+      gap: 0;
+      .button-wrapper {
+        width: 100%;
+      }
+    }
+  }
 `;
 
 export default function AboutSection() {

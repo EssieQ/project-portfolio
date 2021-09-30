@@ -114,6 +114,9 @@ const HeroStyles = styled.div`
         font-size: 2.5rem;
       }
     }
+    .button {
+      margin-top: 2rem;
+    }
   }
 `;
 
@@ -141,8 +144,11 @@ export default function HeroSection() {
                   />
                 </p>
               </PText>
-              <Button btnLink="/projects" btnText="click to see my work" />
+              <span className="button">
+                <Button btnLink="/projects" btnText="click to see my work" />
+              </span>
             </div>
+
             <div className="hero-social">
               <p>
                 Connect with me on
