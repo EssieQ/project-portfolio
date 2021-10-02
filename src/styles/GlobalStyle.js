@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     --white : white;
     --black: black;
     --light: #FFEBC9;
+    --light-2: #fff6e3;
     --brown: #753422;
     --terracotta: #B05B3B;
     --coffee: #D79771;
