@@ -18,7 +18,8 @@ const ProjectSectionStyle = styled.div`
   }
   .swiper-container {
     padding-top: 8rem;
-    padding-bottom: 16rem;
+    padding-bottom: 32rem;
+
     max-width: 100%;
   }
   .swiper-button-prev,
@@ -89,6 +90,7 @@ export default function ProjectSection() {
                     title={project.name}
                     desc={project.desc}
                     img={project.img}
+                    href={project.href}
                   />
                 </SwiperSlide>
               );

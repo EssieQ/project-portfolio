@@ -15,6 +15,7 @@ const ContactBannerStyles = styled.div`
     font-size: 4rem;
     color: var(--terracotta);
   }
+
   @media only screen and (max-width: 768px) {
     .contactBanner-heading {
       font-size: 2.8rem;
@@ -29,7 +30,7 @@ export default function ContactBanner() {
         <div className="contactBanner-wrapper">
           <PText>Have a project in mind?</PText>
           <h3 className="contactBanner-heading">Let me help you</h3>
-          <Button btnText="Contact Now" btnLink="/contact" />
+          <Button btnText="Contact Now" btnLink="/contact" outline />
         </div>
       </div>
     </ContactBannerStyles>

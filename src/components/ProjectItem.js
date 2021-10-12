@@ -18,8 +18,8 @@ const ProjectItemStyle = styled.div`
   }
   .projectItem-info {
     margin-top: 1rem;
-    background-color: var(--light-2);
     padding: 1rem;
+    background-color: var(--light-2);
     border-radius: 8px;
   }
   .projectItem-title {
@@ -41,20 +41,25 @@ export default function ProjectItem({
   img = VanillaJSWeather,
   title = "Project title",
   desc = "Amazing",
+  href = "https://nostalgic-raman-1a34c8.netlify.app/",
 }) {
   return (
     <ProjectItemStyle>
-      <Link
-        to="https://nostalgic-raman-1a34c8.netlify.app/"
-        className="projectItem-img"
-      >
-        <img src={img} alt="Vanilla JS Weather app" />
-      </Link>
-      <div className="projectItem-info">
-        <Link to="#">
-          <h3 className="projectItem-title">{title}</h3>
-        </Link>
-        <p className="projectItem-description">{desc}</p>
+      <div>
+        <a
+          href={href}
+          className="projectItem-img"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={img} alt="Vanilla JS Weather app" />
+        </a>
+        <div className="projectItem-info">
+          <Link to={href}>
+            <h3 className="projectItem-title">{title}</h3>
+          </Link>
+          <p className="projectItem-description">{desc}</p>
+        </div>
       </div>
     </ProjectItemStyle>
   );
