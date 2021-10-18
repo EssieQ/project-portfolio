@@ -11,7 +11,7 @@ const NavigationMenuStyle = styled.div`
   left: 0;
   width: 100%;
   padding: 1rem auto;
-  background: var(--light);
+  background: var(--light-2);
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -64,7 +64,7 @@ const NavigationMenuStyle = styled.div`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease-in-out transform;
-      background-color: var(--light);
+      background-color: var(--light-2);
       padding: 2rem;
       width: 90%;
       max-width: 300px;

@@ -40,7 +40,7 @@ const HeroStyles = styled.div`
     .hero-name {
       font-size: 7rem;
       font-family: "Montserrat Semibold";
-      color: var(--coffee);
+      color: var(--terracotta);
     }
   }
   .hero-img {

@@ -20,10 +20,13 @@ const GlobalStyles = createGlobalStyle`
     --coffee: #D79771;
   }
   html{
-    color: var(--black);
+    color: var(--terracotta);
     font-size: 10px;
     font-family: 'Roboto Mono';
     background-color: var(--light);
+  }
+  h1 {
+    color: var(--terracotta);
   }
   ul,li{
     list-style: none;
@@ -50,15 +53,15 @@ const GlobalStyles = createGlobalStyle`
   [data-scrollbar] {
     height: 100vh;
     overflow: hidden;
-    background-color: var(--gray-1);
+    background-color: var(--light-2);
     .scroll-content {
-      background-color: var(--dark-bg);
+      background-color: var(--light-2);
     }
     .scrollbar-track.scrollbar-track-y {
       z-index: 101;
-      background: var(--deep-dark);
+      background: var(--light-2);
       .scrollbar-thumb-y {
-        background: var(--gray-1);
+        background: var(--light-2);
       }
     }
   }

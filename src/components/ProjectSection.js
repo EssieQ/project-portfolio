@@ -27,7 +27,7 @@ const ProjectSectionStyle = styled.div`
     position: absolute;
     height: 50px;
     width: 50px;
-    background-color: var(--light-2);
+    background-color: var(--light);
     color: var(--terracotta);
     z-index: 10;
     right: 60px;

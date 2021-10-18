@@ -7,7 +7,7 @@ const ButtonStyle = styled.div`
   .button {
     font-size: 2.2rem;
     background-color: ${(props) =>
-      props.outline ? "var(--terracotta)" : "var(--light)"};
+      props.outline ? "var(--terracotta)" : "var(--light-2)"};
     padding: 0.7em 2em;
     margin-top: 20px;
     border-radius: 12px;

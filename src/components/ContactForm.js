@@ -17,7 +17,7 @@ const FormStyles = styled.form`
     font-size: 2rem;
     padding: 1.2rem;
     color: var(--terracotta);
-    background-color: var(--light-2);
+    background-color: var(--light);
     outline: none;
     border: none;
     border-radius: 8px;
@@ -35,7 +35,7 @@ const FormStyles = styled.form`
     border-radius: 8px;
     padding: 1rem 4rem;
     cursor: pointer;
-    background-color: var(--light-2);
+    background-color: var(--light);
   }
 `;
 
@@ -46,7 +46,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <FormStyles>
+      <FormStyles netlify>
         <div className="form-group">
           <label htmlFor="name">
             Your name

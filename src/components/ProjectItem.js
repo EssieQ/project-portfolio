@@ -19,7 +19,7 @@ const ProjectItemStyle = styled.div`
   .projectItem-info {
     margin-top: 1rem;
     padding: 1rem;
-    background-color: var(--light-2);
+    background-color: var(--light);
     border-radius: 8px;
   }
   .projectItem-title {
