@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const FormStyles = styled.form`
+const FormStyles = styled.div`
   width: 100%;
   color: var(--terracotta);
   .form-group {
@@ -45,8 +45,9 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
 
   return (
-    <div>
-      <FormStyles netlify>
+    <FormStyles>
+      <form name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
         <div className="form-group">
           <label htmlFor="name">
             Your name
@@ -84,7 +85,7 @@ export default function ContactForm() {
           </label>
         </div>
         <button type="submit">Send</button>
-      </FormStyles>
-    </div>
+      </form>
+    </FormStyles>
   );
 }
