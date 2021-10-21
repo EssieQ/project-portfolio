@@ -66,7 +66,7 @@ export default function ContactForm() {
             <input
               type="text"
               id="email"
-              email="email"
+              name="email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             />
@@ -78,7 +78,7 @@ export default function ContactForm() {
             <textarea
               type="text"
               id="message"
-              message="message"
+              name="message"
               value={message}
               onChange={(event) => setMessage(event.target.value)}
             />
