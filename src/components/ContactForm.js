@@ -46,7 +46,7 @@ export default function ContactForm() {
 
   return (
     <FormStyles>
-      <form name="contact" method="post">
+      <form action="/contact" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
         <div className="form-group">
           <label htmlFor="name">
