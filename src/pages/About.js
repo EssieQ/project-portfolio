@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "../components/Button";
+import EstherCV from "../assets/data/resume-esther-cauven.pdf";
+
 import PText from "../components/PText";
 import AboutImg from "../assets/images/about-img.png";
 import styled from "styled-components";
@@ -61,6 +62,23 @@ const AboutPageStyles = styled.div`
     margin-bottom: 4rem;
     text-transform: uppercase;
   }
+  .download {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    background-color: ${(props) =>
+      props.outline ? "var(--terracotta)" : "var(--light-2)"};
+    padding: 0.7em 2em;
+    margin-top: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    border: 1px solid var(--terracotta);
+    color: ${(props) => (props.outline ? "var(--light)" : "var(--terracotta)")};
+    &:hover {
+      border: var(--coffee);
+      color: var(--coffee);
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
     .top-section {
@@ -81,6 +99,10 @@ const AboutPageStyles = styled.div`
     }
     .about-info-heading {
       font-size: 3rem;
+    }
+    .download {
+      font-size: 1.8rem;
+      margin-top: -1rem;
     }
   }
 `;
@@ -108,7 +130,13 @@ export default function About() {
                 tech world. Since then, I have also learned React and Python.
               </PText>
             </div>
-            <Button btnText="Download my CV" btnLink="#" />
+            <a
+              href={EstherCV}
+              download="resume-esther-cauven"
+              className="download"
+            >
+              Download my CV
+            </a>
           </div>
         </div>
         <div className="about-info-items">

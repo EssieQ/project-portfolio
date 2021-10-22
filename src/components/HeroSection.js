@@ -140,6 +140,7 @@ export default function HeroSection() {
                       "Polyglot",
                       "Cozy knitter",
                       "Avid reader",
+                      "Cheese lover",
                     ]}
                   />
                 </p>
