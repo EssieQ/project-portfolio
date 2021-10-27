@@ -41,8 +41,12 @@ export default function AboutSection() {
           heading="About me"
         />
         <PText>
-          I am a junior front-end developer from the Netherlands. I like using
-          my creative side to create professional websites{" "}
+          I am a front-end developer from the Netherlands and have lived in 5
+          countries. As a polyglot, I am passionate about learning new languages
+          -- and realised learning a new programming language is very similar to
+          learning a foreign language. I decided using my creative side and
+          knack for learning new languages in web development to combine the two
+          things that bring me joy.
         </PText>
         <div className="about-section-buttons">
           <Button btnLink="/projects" btnText="Projects" />

@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --dark-bg: #262626;
   
     --deep-dark: #1E1E1E;
-   
+    
     --white : white;
     --black: black;
     --light: #FFEBC9;
@@ -19,6 +19,8 @@ const GlobalStyles = createGlobalStyle`
     --terracotta: #B05B3B;
     --coffee: #D79771;
   }
+  
+  
   html{
     color: var(--terracotta);
     font-size: 10px;
@@ -49,7 +51,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
     
   }
-/* Smooth Scroll  */
+  /* Smooth Scroll  */
   [data-scrollbar] {
     height: 100vh;
     overflow: hidden;

@@ -122,12 +122,16 @@ export default function About() {
             <h2 className="about-heading">A front-end developer</h2>
             <div className="about-info">
               <PText>
+                I have spent the last 3 years in Australia, and before that I
+                lived in India, China, and Spain.
+                <br />
+                <br />
                 I have always had a deep interest for learning new languages.
                 Only recently have I realised that this also translates well --
                 pun intended -- to coding languages!
                 <br /> <br />I started my coding adventure with HTML, CSS, and
                 JavaScript, and soon realised I wanted to make my way into the
-                tech world. Since then, I have also learned React and Python.
+                tech world. Since then, I have also learnt React and Python.
               </PText>
             </div>
             <a
@@ -143,6 +147,12 @@ export default function About() {
           <div className="about-info-item">
             <h1 className="about-info-heading">Education</h1>
             <AboutInfoItem
+              title="Certifications"
+              items={["Front End Development, React Development, SheCodes"]}
+            />
+          </div>
+          <div className="about-info-item">
+            <AboutInfoItem
               title="University"
               items={[
                 "Zuyd University of Applied Sciences, Maastricht, Netherlands",
@@ -154,7 +164,16 @@ export default function About() {
             <h1 className="about-info-heading">My Skills</h1>
             <AboutInfoItem
               title="Front End"
-              items={["HTML", "CSS", "JavaScript", "React"]}
+              items={[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Bootstrap",
+                "Styled Components",
+                "Python",
+                "API integration",
+              ]}
             />
           </div>
         </div>
