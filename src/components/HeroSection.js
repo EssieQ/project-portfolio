@@ -104,7 +104,7 @@ const HeroStyles = styled.div`
       }
     }
     .hero-img {
-      height: 300px;
+      height: 450px;
     }
     .hero-info {
       margin-top: 3rem;

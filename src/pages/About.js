@@ -148,15 +148,15 @@ export default function About() {
             <h1 className="about-info-heading">Education</h1>
             <AboutInfoItem
               title="Certifications"
-              items={["Front End Development, React Development, SheCodes"]}
+              items={["Front End Development, React Development -- SheCodes"]}
             />
           </div>
           <div className="about-info-item">
             <AboutInfoItem
               title="University"
               items={[
-                "Zuyd University of Applied Sciences, Maastricht, Netherlands",
-                "Nankai University, Tianjin, China",
+                "Oriental Languages and Communication -- Zuyd University of Applied Sciences, Maastricht, Netherlands",
+                "Chinese Language and Culture -- Nankai University, Tianjin, China",
               ]}
             />
           </div>
