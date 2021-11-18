@@ -102,8 +102,8 @@ export default function Footer() {
                 path: "mailto: ecauven@gmail.com",
               },
               {
-                title: "Brisbane, QLD",
-                path: "https://www.google.com/maps/place/Brisbane+Queensland/@-27.3798038,152.4327681,9z/data=!3m1!4b1!4m5!3m4!1s0x6b91579aac93d233:0x402a35af3deaf40!8m2!3d-27.4704528!4d153.0260341",
+                title: "Amsterdam, NL",
+                path: "https://www.google.com/maps/place/Amsterdam/@52.3547925,4.7638758,11z/data=!3m1!4b1!4m5!3m4!1s0x47c63fb5949a7755:0x6600fd4cb7c0af8d!8m2!3d52.3675734!4d4.9041389",
               },
             ]}
           />
