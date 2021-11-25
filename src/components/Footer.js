@@ -94,8 +94,8 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: "+61 401 167 654",
-                path: "tel: +61 401 167 654",
+                title: "+31 658 847 058",
+                path: "tel: +31 658 847 058",
               },
               {
                 title: "ecauven@gmail.com",
@@ -118,7 +118,7 @@ export default function Footer() {
               },
               {
                 title: "Github",
-                path: "https://github.com/EssieQ",
+                path: "https://github.com/esthercauven",
               },
             ]}
           />
